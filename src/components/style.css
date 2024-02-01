@@ -1,0 +1,74 @@
+/* style.css */
+
+.form-container {
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-group > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-group > label > input {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* outline: 1px solid #00f; */
+}
+
+.__btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.__btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.__btn:hover {
+  background-color: #45a049;
+}
+
+.image-upload {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-name {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
